@@ -9,5 +9,8 @@
     "start": "node app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.7.1"
+  }
 }
