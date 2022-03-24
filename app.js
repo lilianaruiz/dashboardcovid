@@ -10,17 +10,23 @@ console.log(fechas)
 const ctxg1 = document.getElementById('grafico1').getContext('2d');
 const ctxg2 = document.getElementById('grafico2').getContext('2d');
 
+const hospitalizados = fechas[0].outcomes.hospitalized
+console.log ("host",hospitalizados)
+const actuales = hospitalizados.currently.value
+const cuidadosint = hospitalizados.in_icu.currently.value
+const ventilador = hospitalizados.on_ventilator.currently.value
+
 const myChart = new Chart(ctxg1, {
     type: 'doughnut',
     data: {
         labels: [
-          'Red',
-          'Blue',
-          'Yellow'
+          'Actuales',
+          'Cuidados Intencivos',
+          'Con Respirador'
         ],
         datasets: [{
           label: 'My First Dataset',
-          data: [300, 50, 100],
+          data: [actuales,cuidadosint,ventilador],
           backgroundColor: [
             'rgb(121, 200, 206)',
             'rgb(54, 162, 235)',
@@ -45,7 +51,6 @@ const labels = fechas.map((fecha)=>{
 const casos = fechas.map((caso)=>{
     return caso.cases.total.value
 });
-
 
 const data = {
   labels: labels,
