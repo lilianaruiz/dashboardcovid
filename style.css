@@ -5,16 +5,23 @@
 }
 header{
     height: 120px;
+    width: 100%;
     background-image: linear-gradient(to left, rgb(121,200,206) 10%, #2a6f97 40%, #a9d6e5 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.imgtitulo{
+    position: absolute;
+    right: 0%;
+}
+.imgtitulo img{
+height: 120px;
+
 
 }
-header div{
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    header h5{
+header h5{
     font-size: x-large;
     color: cornsilk;
 }
@@ -36,20 +43,29 @@ header div{
     margin-top: 70px;
     height: 125px;
     width: 220px;
-    border: 1px solid cadetblue;
+    border-radius: 25px;
+    display: flex;
+    color:white;
+    
+
 
 }
+.tarjeta img{
+    height: 45px;
+}
 .tarjetas .tarjeta.morado{
-    background-color: rgb(137,125,232);
+    background: linear-gradient(to left,rgba(137,125,232,.6),rgba(137,125,232,.4));
+
 
 }
 .tarjetas .tarjeta.verde{
-    background-color: rgb(121, 200, 206);
+
+    background: linear-gradient(to left,rgba(121,200,206,.6),rgba(121,200,206,.4));
+
 
 }
 .tarjetas .tarjeta.azul{
-    background-color: rgb(61, 102, 206);
-
+    background: linear-gradient(to left,rgba(61,102,206,.7),rgba(61,102,206,.5));
 }
 .tarjetas h4{
     margin-top: 25px;

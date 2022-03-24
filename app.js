@@ -10,6 +10,18 @@ console.log(fechas)
 const ctxg1 = document.getElementById('grafico1').getContext('2d');
 const ctxg2 = document.getElementById('grafico2').getContext('2d');
 
+const ppositivo = document.getElementById('positivos')
+const positivos = fechas[0].cases.total.value
+ppositivo.innerText = positivos
+
+const ppruebas = document.getElementById('pruebas')
+const pruebas = fechas[0].testing.total.value
+ppruebas.innerText = pruebas
+
+const pmuertes = document.getElementById('muertes')
+const muertes = fechas[0].outcomes.death.total.value
+pmuertes.innerText = muertes
+
 const hospitalizados = fechas[0].outcomes.hospitalized
 console.log ("host",hospitalizados)
 const actuales = hospitalizados.currently.value
@@ -35,13 +47,7 @@ const myChart = new Chart(ctxg1, {
           hoverOffset: 4
         }]
     },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
+    
 });
 
 const labels = fechas.map((fecha)=>{
