@@ -10,6 +10,12 @@ console.log(fechas)
 const ctxg1 = document.getElementById('grafico1').getContext('2d');
 const ctxg2 = document.getElementById('grafico2').getContext('2d');
 
+const botondatos = document.querySelector(".datos")
+botondatos.addEventListener('click',()=>{
+    const graficos =document.querySelector(".graficos")
+    graficos.style = 'visibility:visible'
+})
+
 const ppositivo = document.getElementById('positivos')
 const positivos = fechas[0].cases.total.value
 ppositivo.innerText = positivos.toLocaleString()
