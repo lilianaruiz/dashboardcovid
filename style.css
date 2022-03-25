@@ -1,88 +1,111 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'raleway', sans-serif;
+    font-family: "raleway", sans-serif;
 }
-header{
+body {
+    background-color: rgb(246, 246, 251);
+}
+header {
     height: 120px;
     width: 100%;
-    background-image: linear-gradient(to left, rgb(121,200,206) 10%, #2a6f97 40%, #a9d6e5 74%);
+    background-image: linear-gradient(to left, rgb(121, 200, 206) 10%, #2a6f97 40%, #a9d6e5 74%);
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.imgtitulo{
+.imgtitulo {
     position: absolute;
     right: 0%;
 }
-.imgtitulo img{
-height: 120px;
-
-
+.imgtitulo img {
+    height: 120px;
 }
-header h5{
+header h5 {
     font-size: x-large;
-    color: cornsilk;
+    color: white;
 }
-.contenedorgeneral{
+
+.contenedorgeneral {
     display: flex;
 }
-.lateral{
+.lateral {
+    padding: 20px;
     height: 100vh;
     width: 15vw;
     background-color: rgb(61, 102, 206);
+    color: rgb(22, 51, 53);
 }
-.tarjetas{
+.titulos {
+    color: white;
+}
+
+.lateral img {
+    height: 35px;
+    padding: 10px;
+}
+.datos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgba(121, 200, 206, 0.8), rgba(121, 200, 206, 0.4));
+}
+.base {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgba(61, 102, 206, 0.8), rgba(121, 200, 206, 0.4));
+}
+.tarjetas {
     width: 85vw;
     display: flex;
     justify-content: space-around;
-
 }
-.tarjeta{
+.tarjeta {
     margin-top: 70px;
     height: 125px;
     width: 220px;
     border-radius: 25px;
     display: flex;
-    color:white;
-    
-
-
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
-.tarjeta img{
+.tarjeta img {
     height: 45px;
+    margin-right: 10px;
 }
-.tarjetas .tarjeta.morado{
-    background: linear-gradient(to left,rgba(137,125,232,.6),rgba(137,125,232,.4));
-
-
+.tarjeta > div p:first-of-type {
+    font-size: 25px;
 }
-.tarjetas .tarjeta.verde{
-
-    background: linear-gradient(to left,rgba(121,200,206,.6),rgba(121,200,206,.4));
-
-
+.tarjetas .tarjeta.morado {
+    background: linear-gradient(to left, rgba(137, 125, 232, 0.6), rgba(137, 125, 232, 0.4));
 }
-.tarjetas .tarjeta.azul{
-    background: linear-gradient(to left,rgba(61,102,206,.7),rgba(61,102,206,.5));
+.tarjetas .tarjeta.verde {
+    background: linear-gradient(to left, rgba(121, 200, 206, 0.6), rgba(121, 200, 206, 0.4));
 }
-.tarjetas h4{
-    margin-top: 25px;
-    
+.tarjetas .tarjeta.azul {
+    background: linear-gradient(to left, rgba(61, 102, 206, 0.7), rgba(61, 102, 206, 0.5));
+}
+.tarjetas h4 {
+    margin-bottom: 25px;
     left: 18vw;
-    position:absolute;
+    position: absolute;
 }
-.graficos{
+.graficos {
     width: 85vw;
     display: flex;
     justify-content: space-around;
-
 }
 .graficos #grafico1 {
     margin-top: 60px;
     height: 380px;
-    width: 400px;
+    width: 380px;
     border: 1px solid cadetblue;
 }
 .graficos #grafico2 {
@@ -90,10 +113,10 @@ header h5{
     height: 380px;
     width: 620px;
     border: 1px solid cadetblue;
+    max-height: 380px;
 }
-.graficos h4{
+.graficos h4 {
     margin-top: 25px;
     left: 18vw;
-    position:absolute;
-    
+    position: absolute;
 }
